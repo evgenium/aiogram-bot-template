@@ -7,10 +7,10 @@ from utils.set_bot_commands import set_default_commands
 
 
 async def on_startup(dispatcher):
-    # Устанавливаем дефолтные команды
+    # Setup default commands
     await set_default_commands(dispatcher)
 
-    # Уведомляет про запуск
+    # Notifies user on bot initialization
     await on_startup_notify(dispatcher)
 
 
